@@ -4,6 +4,7 @@
 ## Tryout
 
 1. clone this repo
+1. add your own `scribe` and `sentry` config
 1. `npm install`
 1. `node index.js`
 
