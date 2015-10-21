@@ -52,8 +52,8 @@ app.use(function* () {
     this.body = 'Hello World!';
 });
 
-app.on("error", function(err) {
-    logger.error(this.url, {error: err});
+app.on('error', function(err, context) {
+    context.log('error', context.url, {error: err, type: 'app.onerror'});
 });
 
 app.listen(port);
